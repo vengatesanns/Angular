@@ -1,0 +1,27 @@
+<div> <span><h2>Employee Details</h2></span><span style="float:right"> <button id="add" class="btn glyphicon glyphicon-plus" onClick="location.href='#/create'" </button></span></div>
+        <!--<h2>Employee Details</h2> <span style="float:right"><a href="#/create">Create Employee</a></span>-->
+         <table style="width:100%">
+            <thead>
+                <tr>
+                    
+                    <th>EmpID</th>
+                    <th>EmpName</th>
+                    <th>Designation</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Address</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="hero in Employees">
+                    <td>{{hero.id}}</td>
+                    <td>{{hero.empname}}</td>
+                    <td>{{hero.designation}}</td>
+                    <td>{{hero.email}}</td>
+                    <td>{{hero.phone}}</td>
+                    <td>{{hero.address}}</td>
+                </tr>
+            </tbody>
+        </table> 
+      
+    </div>
